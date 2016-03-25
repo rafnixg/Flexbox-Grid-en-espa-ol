@@ -1,0 +1,62 @@
+/*!------------------------------------- 
+Autor:Rafnix Guzman
+Email: Rafnixg@gmail.com
+Web: rafnixg.github.io
+Nombre: Flexbox Grid
+Version: 1.0.0
+---------------------------------------*/
+
+*
+*:after
+*:before
+	margin 0
+	padding 0
+	box-sizing: border-box;
+
+body
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+	
+
+grid(medida)
+	.columna-{medida}
+		flex-grow 1
+		flex-basis 0
+		max-width 100%
+	for i in (1..12)
+		.columna-{medida}-{i}
+			flex-basis i*(100.0/12)% 
+			max-width i*(100.0/12)%
+
+.contenedor
+	margin 0 auto
+	
+
+.fila
+	display flex
+	flex 0 1 auto
+	flex-flow row wrap
+	padding 0 20px
+
+[class*="columna-"]
+		flex 0 0 auto
+		padding 0 20px
+		
+	
+grid(xs)
+
+@media only screen and (min-width: 768px) 
+	
+	grid(sm)
+	
+@media only screen and (min-width: 992px)
+
+	grid(md)
+
+@media only screen and (min-width: 1200px)
+	
+	grid(lg)
+	 
