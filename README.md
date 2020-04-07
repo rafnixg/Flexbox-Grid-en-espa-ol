@@ -1,7 +1,7 @@
 # Grid usando Flexbox
 Flexbox grid en español, influenciado por [bootstrap](http://getbootstrap.com/css/#grid)
 
-##Como usarlo
+## Como usarlo
 Este sistema de grid usa las clases en español, pero son una analogia a las clases de bootstrap
 
 ```html
@@ -11,7 +11,7 @@ Este sistema de grid usa las clases en español, pero son una analogia a las cla
     <div>
 </div>
 ```
-Clases para abarcar todo el espacio de forma automatica
+Clases para abarcar todo el espacio de forma automática
 ```html
 <div class="fila">
 	<div class="columna-xs">
@@ -26,8 +26,8 @@ Clases para abarcar todo el espacio de forma automatica
 </div>
 ```
 
-##Desarrollo
-Crea tus cambios en el archivo miflexgrid.styl y luego compila a tu CSS
-##Changelog
+## Desarrollo
+Crea tus cambios en el archivo `miflexgrid.styl` y luego compila a tu CSS
+## Changelog
 #### v.1.0.0 - 25/03/2016
 - Lanzamiento 
